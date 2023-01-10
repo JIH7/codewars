@@ -1,0 +1,23 @@
+var humanYearsCatYearsDogYears = function(humanYears) {
+  
+  let animalYears = 0
+  
+  
+  if(humanYears > 0){
+    animalYears += 15
+  }
+  
+  if (humanYears > 1){
+    animalYears += 9
+  }
+  
+  let catYears = animalYears
+  let dogYears = animalYears
+  
+  if(humanYears > 2){
+    catYears += (humanYears - 2) * 4
+    dogYears += (humanYears - 2) * 5
+  }
+  
+  return [humanYears, catYears, dogYears];
+}
